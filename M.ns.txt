@@ -1,0 +1,49 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Enter the price of the first item:");
+        double item1Price = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("Enter the price of the second item:");
+        double item2Price = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("Enter the price of the third item:");
+        double item3Price = Convert.ToDouble(Console.ReadLine());
+
+        double totalAmount = item1Price + item2Price + item3Price;
+        double discount = totalAmount * 0.1;
+        double netAmountPayable = totalAmount - discount;
+
+        Console.WriteLine("Net amount payable after 10% discount: " + netAmountPayable);
+    }
+}
+
+
+And here's a C# program to calculate the Fibonacci sequence:
+
+csharp
+using System;
+
+class Program
+{
+    static int Fibonacci(int n)
+    {
+        if (n <= 1)
+            return n;
+
+        return Fibonacci(n - 1) + Fibonacci(n - 2);
+    }
+
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Enter the value of n:");
+        int n = Convert.ToInt32(Console.ReadLine());
+
+        int result = Fibonacci(n);
+
+        Console.WriteLine("The Fibonacci number at position " + n + " is: " + result);
+    }
+}
